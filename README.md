@@ -1,2 +1,3 @@
-# Projeto-MiniDocument-rioInterativo
-Mini documentário interativo realizado durante o curso de Desenvolvedor Front-end pelo Senac, através do programa Transforme-se no ano de 2026. .
+# SiteDitaduraMilitar-Transforme-SE
+
+Site desenvolvido durante o curso de Desenvolvedor Front-End pelo Senac no ano de 2026. Com foco em demonstrar fatos sobre o impacto da Ditadura na cultura nacional.
