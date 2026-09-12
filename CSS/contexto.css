@@ -1,0 +1,4 @@
+.contexto {
+    display: flex; /*Deixei o flex para ver se estav certo*/
+    border: 1px solid black;   
+}

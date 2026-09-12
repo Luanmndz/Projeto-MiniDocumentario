@@ -1,0 +1,52 @@
+/* CSS do banner de principal(imagem de fundo e o h1) */
+.hero {
+    height: 100vh;
+    background: url(../imagens/Hero/BannerDocumentario.png);
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 0 80px;
+}
+
+.hero-title{
+
+   max-width: 900px;
+   width: 100%;
+    
+}
+.h1-hero {
+    font-family: 'Zuume';
+    color: white;
+    font-size: 130px;
+    letter-spacing: 5px;
+    line-height: 0.85;
+}
+
+/* CSS da Nav */
+header{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+    width: 100%;
+    position: fixed;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 20px;
+    border: none;
+}
+
+a:hover{
+    cursor: pointer;
+    color: bisque;
+    opacity: 0.6;
+}
