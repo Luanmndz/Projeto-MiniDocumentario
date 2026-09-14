@@ -1,0 +1,91 @@
+/* ==========================================================================
+   FOOTER.CSS — Rodapé completo (colunas + navegação + créditos)
+   ========================================================================== */
+
+footer {
+    background-color: var(--cor-preto);
+    color: var(--cor-cinza-claro);
+    border-top: 3px solid var(--cor-vermelho);
+}
+
+.footer-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px 40px;
+}
+
+.footer-coluna {
+    flex: 1 1 220px;
+}
+
+.footer-sobre {
+    flex: 2 1 320px;
+}
+
+.footer-logo {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-branco);
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.footer-sobre p {
+    font-family: var(--fonte-texto);
+    font-size: 13px;
+    line-height: 1.7;
+    max-width: 420px;
+    color: var(--cor-cinza-claro);
+}
+
+.footer-coluna h4 {
+    font-family: var(--fonte-datilografada);
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--cor-branco);
+    margin-bottom: 16px;
+}
+
+.footer-coluna ul {
+    list-style: none;
+}
+
+.footer-coluna li {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.footer-coluna a {
+    color: var(--cor-cinza-claro);
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.footer-coluna a:hover {
+    color: var(--cor-vermelho);
+}
+
+.footer-baixo {
+    border-top: 1px solid var(--cor-cinza-escuro);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-baixo p {
+    font-family: var(--fonte-datilografada);
+    font-size: 12px;
+    color: var(--cor-cinza-claro);
+}
+
+@media (max-width: 640px) {
+    .footer-conteudo {
+        flex-direction: column;
+        padding: 50px 24px 30px;
+        gap: 30px;
+    }
+}

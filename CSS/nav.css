@@ -1,4 +1,44 @@
-/* CSS do banner de principal(imagem de fundo e o h1) */
+/* ==========================================================================
+   NAV.CSS — Header fixo (fino) e Hero
+   ========================================================================== */
+
+/* CSS da Nav — corrigido: agora com top/left/z-index explícitos, então o
+   header sempre fica por cima de qualquer imagem/seção, mesmo as que usam
+   filter/transform (que criam suas próprias camadas de empilhamento) */
+header {
+    background-color: rgba(13, 13, 13, 0.92);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 14px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--cor-branco);
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 14px;
+    border: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.25s ease, opacity 0.25s ease;
+}
+
+header a:hover {
+    cursor: pointer;
+    opacity: 0.75;
+    border-bottom-color: var(--cor-vermelho);
+}
+
+/* CSS do banner principal (imagem de fundo e o h1) */
 .hero {
     height: 100vh;
     background: url(../imagens/Hero/BannerDocumentario.png);
@@ -11,42 +51,36 @@
     padding: 0 80px;
 }
 
-.hero-title{
-
-   max-width: 900px;
-   width: 100%;
-    
+.hero-title {
+    max-width: 900px;
+    width: 100%;
 }
+
 .h1-hero {
-    font-family: 'Zuume';
-    color: white;
-    font-size: 130px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-branco);
+    font-size: clamp(48px, 9vw, 130px);
     letter-spacing: 5px;
     line-height: 0.85;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* CSS da Nav */
-header{
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding: 30px;
-    width: 100%;
-    position: fixed;
-}
+/* ---------- Responsivo ---------- */
+@media (max-width: 768px) {
+    header {
+        gap: 18px;
+        padding: 12px 10px;
+        flex-wrap: wrap;
+    }
 
-header a{
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    letter-spacing: 3px;
-    font-size: 20px;
-    border: none;
-}
+    header a {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
 
-a:hover{
-    cursor: pointer;
-    color: bisque;
-    opacity: 0.6;
+    .hero {
+        padding: 0 24px;
+        justify-content: center;
+        text-align: center;
+    }
 }

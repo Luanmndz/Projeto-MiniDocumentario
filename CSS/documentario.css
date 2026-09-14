@@ -1,0 +1,43 @@
+/* ==========================================================================
+   DOCUMENTARIO.CSS — Fundo cinza, título grande e player centralizado
+   ========================================================================== */
+
+.documentario {
+    background-color: var(--cor-cinza-medio);
+    padding: 80px 24px 100px;
+    text-align: center;
+}
+
+.documentario h1 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-branco);
+    font-size: clamp(30px, 5vw, 48px);
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+.documentario video {
+    width: 100%;
+    max-width: 1070px;
+    aspect-ratio: 16 / 9;
+    background-color: var(--cor-preto);
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.documentario h3 {
+    font-family: var(--fonte-datilografada);
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--cor-branco);
+    max-width: 600px;
+    margin: 30px auto 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .documentario {
+        padding: 60px 16px 70px;
+    }
+}

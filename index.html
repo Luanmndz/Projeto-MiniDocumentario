@@ -9,168 +9,199 @@
     <link rel="stylesheet" href="CSS/contexto.css">
     <link rel="stylesheet" href="CSS/documentario.css">
     <link rel="stylesheet" href="CSS/cantores.css">
+    <link rel="stylesheet" href="CSS/footer.css">
     <title> Site - Ditadura Militar </title>
 </head>
 
 <body>
-    <!-- Hero inicial(Foto de fundo, header e h1) -->
+    <!-- Header fixo -->
     <header>
         <a href="#hero"> HOME </a>
         <a href="#contexto"> CONTEXTO </a>
         <a href="#documentario"> DOCUMENTÁRIO </a>
         <a href="#cantores"> CANTORES </a>
-        <a href="#sobre"> SOBRE </a>
     </header>
+
+    <!-- Hero inicial (Foto de fundo, header e h1) -->
     <section class="hero" id="hero">
         <div class="hero-title">
             <h1 class="h1-hero"> DITADURA<br> MILITAR NO <br> BRASIL </h1>
         </div>
     </section>
 
-    <!-- EStrutura htmk pronta, so precisa estilizar no "contexto.css" -->
+    <!-- Seção Contexto, estilo jornal/reportagem -->
     <section class="contexto" id="contexto">
-        <div class="caixa-contexto-esquerda">
-            <img src="imagens/Contexto/foto-amanhaseraoutrodia.png" alt="Manifestaçã Amanha Sera Outro Dia">
-            <p class="texto-contexto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cumque tempore
-                dolores nam nulla nisi sit, saepe illo fuga corporis placeat ut, ducimus dolorum vero quia maxime quae
-                reiciendis laborum?</p>
-            <img src="imagens/Contexto/foto-chico-buarque.png" alt=" Foto Chico Buarque">
-            <p class="texto-contexto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi natus impedit ad
-                laudantium exercitationem cum sapiente alias delectus. Tenetur distinctio nam expedita pariatur eius
-                dignissimos assumenda odit tempora sed quos.</p>
+        <div class="contexto-cabecalho">
+            <span class="contexto-editoria">Reportagem Especial</span>
+            <h2 class="contexto-titulo">O Silêncio Imposto: Cultura e Repressão (1964–1985)</h2>
+            <p class="contexto-linha-fina">Como o regime militar tentou calar a música, o teatro e a liberdade de
+                expressão no Brasil — e como parte da sociedade resistiu nas ruas.</p>
         </div>
 
-        <div class="caixa-contexto-centro">
-            <img src="imagens/Contexto/foto-ditaduramanifestacao.png" alt="Manifestação Amanha Sera Outro Dia">
-            <p class="texto-contexto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cumque tempore
-                dolores nam nulla nisi sit, saepe illo fuga corporis placeat ut, ducimus dolorum vero quia maxime quae
-                reiciendis laborum?</p>
-            <img src="imagens/Contexto/foto-contracensura.png" alt=" Manifestação Contra Censura">
-            <p class="texto-contexto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi natus impedit ad
-                laudantium exercitationem cum sapiente alias delectus. Tenetur distinctio nam expedita pariatur eius
-                dignissimos assumenda odit tempora sed quos.</p>
-        </div>
+        <div class="contexto-colunas">
+            <div class="caixa-contexto-esquerda">
+                <figure>
+                    <img src="imagens/Contexto/foto-amanhaseraoutrodia.png"
+                        alt="Manifestantes seguram cartaz com a frase Amanhã Há de Ser Outro Dia">
+                    <figcaption>Manifestantes carregam a frase "Amanhã Há de Ser Outro Dia", símbolo da esperança de
+                        redemocratização durante os anos de chumbo.</figcaption>
+                </figure>
+                <p class="texto-contexto"><span class="letra-capitular">A</span>pós o golpe de 1964, o regime militar
+                    passou a controlar de perto tudo o que era produzido culturalmente no país. Jornais, peças de
+                    teatro, letras de música e programas de TV precisavam da aprovação de censores antes de chegar ao
+                    público, e qualquer conteúdo considerado "subversivo" era simplesmente proibido.</p>
+                <figure>
+                    <img src="imagens/Contexto/foto-chico-buarque.png" alt="Retrato do cantor e compositor Chico Buarque">
+                    <figcaption>Chico Buarque, um dos compositores mais perseguidos pela censura do período.</figcaption>
+                </figure>
+                <p class="texto-contexto">Chico Buarque teve dezenas de músicas censuradas e chegou a compor sob
+                    pseudônimo para driblar a fiscalização. Diante da perseguição, viveu em autoexílio na Itália entre
+                    1969 e 1970, retornando ao Brasil para seguir compondo e denunciando os abusos do regime.</p>
+            </div>
 
-        <div class="caixa-contexto-direita">
-            <img src="imagens/Contexto/foto-cantor-preso.png" alt="Foto de cantor sendo preso">
-            <p class="texto-contexto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cumque tempore
-                dolores nam nulla nisi sit, saepe illo fuga corporis placeat ut, ducimus dolorum vero quia maxime quae
-                reiciendis laborum?</p>
-            <!-- Adicionem fotos ou algo aqui, no prototipo acaba aqui -->
-            <img src="imagens/Contexto/foto-chico-buarque.png" alt=" Foto Chico Buarque">
-            <p class="texto-contexto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi natus impedit ad
-                laudantium exercitationem cum sapiente alias delectus. Tenetur distinctio nam expedita pariatur eius
-                dignissimos assumenda odit tempora sed quos.</p>
+            <div class="caixa-contexto-centro">
+                <figure>
+                    <img src="imagens/Contexto/foto-ditaduramanifestacao.png"
+                        alt="Multidão em manifestação com faixa Abaixo a Ditadura, Povo no Poder">
+                    <figcaption>"Abaixo a ditadura, povo no poder" — uma das muitas faixas erguidas em manifestações
+                        de rua contra o regime.</figcaption>
+                </figure>
+                <p class="texto-contexto">A partir de 1968, com a decretação do AI-5 (Ato Institucional nº 5), a
+                    censura se tornou ainda mais rígida: o Congresso foi fechado, direitos individuais foram suspensos
+                    e a repressão a opositores se intensificou. Foi o início dos chamados "anos de chumbo", o período
+                    mais duro da ditadura.</p>
+                <figure>
+                    <img src="imagens/Contexto/foto-contracensura.png"
+                        alt="Grupo de manifestantes com faixa Contra a Censura pela Cultura">
+                    <figcaption>Artistas e estudantes saem às ruas com a faixa "Contra a Censura, pela Cultura".</figcaption>
+                </figure>
+                <p class="texto-contexto">Mesmo sob vigilância, artistas, estudantes e intelectuais se organizaram em
+                    passeatas e manifestos públicos pedindo o fim da censura. Essas mobilizações culturais foram
+                    fundamentais para manter viva a resistência até a redemocratização, em 1985.</p>
+            </div>
+
+            <div class="caixa-contexto-direita">
+                <figure>
+                    <img src="imagens/Contexto/foto-cantor-preso.png" alt="Fotografia de um cantor sendo detido">
+                    <figcaption>Diversos artistas foram detidos, interrogados ou exilados por suas obras e
+                        posicionamentos políticos.</figcaption>
+                </figure>
+                <p class="texto-contexto">Ser um artista de sucesso não garantia proteção: nomes como Gilberto Gil e
+                    Caetano Veloso foram presos em 1968 e, em seguida, exilados em Londres. Suas canções eram vistas
+                    pelo regime como ameaças à ordem estabelecida.</p>
+                <figure>
+                    <img src="imagens/Contexto/foto-chico-buarque.png" alt="Chico Buarque em fotografia de época">
+                    <figcaption>O legado da música engajada do período segue vivo até hoje na cultura brasileira.</figcaption>
+                </figure>
+                <p class="texto-contexto">Passadas mais de duas décadas de regime militar, o país só recuperou
+                    plenamente a liberdade de expressão com a Constituição de 1988. A memória dessa resistência
+                    cultural é o ponto de partida deste documentário.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Estrutura documentario pronta, so estilizar no "documentario.css" -->
+    <!-- Seção Documentário -->
     <section class="documentario" id="documentario">
         <h1> DOCUMENTÁRIO </h1>
-        <!-- Quando o video estiver pronto adicionar ele no arquivo e linkar aqui -->
-        <video src=""></video>
-        <h3></h3>
+        <!-- Quando o video estiver pronto, adicionar o arquivo e linkar no src abaixo -->
+        <video controls poster="imagens/Hero/BannerDocumentario.png"></video>
+        <h3> Mini documentário interativo sobre a opressão cultural durante esse período histórico. </h3>
     </section>
 
+    <!-- Seção Cantores -->
     <section class="cantores" id="cantores">
-        <h1> Cantores </h1>
+        <h1> Cantores Perseguidos </h1>
         <div class="cantores-caixa">
             <div class="cantores-card">
+                <img src="imagens/Fotos Procurados/chico-procurado.png" alt="Chico Buarque - Procurado">
                 <div class="text-card">
-                    <h2>uuuu</h2>
-                    <p>olA</p>
-                    <span>OI</span>
+                    <h2>Chico Buarque</h2>
+                    <p>Compositor com dezenas de músicas censuradas; viveu em autoexílio na Itália entre 1969 e 1970.</p>
+                    <span>Censurado &amp; Exilado</span>
                 </div>
-                <img src="imagens/Fotos Procurados/chico-procurado.png" alt="Chico Buarque - Procurado" width="300px">
             </div>
 
             <div class="cantores-card">
+                <img src="imagens/Fotos Procurados/gilberto-procurado.png" alt="Gilberto Gil - Procurado">
                 <div class="text-card">
-                    <h2> uuuuu </h2>
-                    <p> ola </p>
-                    <span> oii </span>
+                    <h2>Gilberto Gil</h2>
+                    <p>Ícone da Tropicália, foi preso em 1968 e exilado em Londres ao lado de Caetano Veloso.</p>
+                    <span>Preso &amp; Exilado</span>
                 </div>
-                <img src="imagens/Fotos Procurados/gilberto-procurado.png" alt="Gilberto Gil - Procurado" width="300px">
             </div>
+
             <div class="cantores-card">
+                <img src="imagens/Fotos Procurados/gozaguinha-procurado.png" alt="Gonzaguinha - Procurado">
                 <div class="text-card">
-                    <h2> uuuuu </h2>
-                    <p> ola </p>
-                    <span> oii </span>
+                    <h2>Gonzaguinha</h2>
+                    <p>Compositor de canções de forte crítica social, teve diversas letras barradas pela censura.</p>
+                    <span>Censurado</span>
                 </div>
-                <img src="imagens/Fotos Procurados/gilberto-procurado.png" alt="Gilberto Gil - Procurado" width="300px">
             </div>
+
             <div class="cantores-card">
+                <img src="imagens/Fotos Procurados/nara-procurado.png" alt="Nara Leão - Procurado">
                 <div class="text-card">
-                    <h2> uuuuu </h2>
-                    <p> ola </p>
-                    <span> oii </span>
+                    <h2>Nara Leão</h2>
+                    <p>Musa da Bossa Nova, emprestou a voz a canções de protesto contra a repressão política.</p>
+                    <span>Voz de Protesto</span>
                 </div>
-                <img src="imagens/Fotos Procurados/gilberto-procurado.png" alt="Gilberto Gil - Procurado" width="300px">
             </div>
+
             <div class="cantores-card">
+                <img src="imagens/Fotos Procurados/raul-procurado.png" alt="Raul Seixas - Procurado">
                 <div class="text-card">
-                    <h2> uuuuu </h2>
-                    <p> ola </p>
-                    <span> oii </span>
+                    <h2>Raul Seixas</h2>
+                    <p>Roqueiro de postura antiautoritária, teve trabalhos vigiados pelos órgãos de censura da época.</p>
+                    <span>Vigiado</span>
                 </div>
-                <img src="imagens/Fotos Procurados/gilberto-procurado.png" alt="Gilberto Gil - Procurado" width="300px">
             </div>
+
             <div class="cantores-card">
+                <img src="imagens/Fotos Procurados/rita-procurado.png" alt="Rita Lee - Procurado">
                 <div class="text-card">
-                    <h2> uuuuu </h2>
-                    <p> ola </p>
-                    <span> oii </span>
+                    <h2>Rita Lee</h2>
+                    <p>Integrante dos Mutantes, enfrentou censura e perseguição por sua postura contestadora.</p>
+                    <span>Censurada</span>
                 </div>
-                <img src="imagens/Fotos Procurados/gilberto-procurado.png" alt="Gilberto Gil - Procurado" width="300px">
             </div>
         </div>
     </section>
 
-    <!-- Layout a Definir (Prof pediu uma secao sobre com nossos linkedins) -->
-    <section class="sobre" id="sobre">
-        <h1> NOSSO TIME </h1>
-        <div class="membros-caixa">
-            <div class="membros-card">
-                <!-- nao sei como vai ser a estrutura, so um protoipo -->
-                <img src="" alt="">
-                <link rel="stylesheet" href="">
-                <p></p>
-            </div>
-            <div class="membros-card">
-                <!-- nao sei como vai ser a estrutura, so um protoipo -->
-                <img src="" alt="">
-                <link rel="stylesheet" href="">
-                <p></p>
-            </div>
-            <div class="membros-card">
-                <!-- nao sei como vai ser a estrutura, so um protoipo -->
-                <img src="" alt="">
-                <link rel="stylesheet" href="">
-                <p></p>
-            </div>
-            <div class="membros-card">
-                <!-- nao sei como vai ser a estrutura, so um protoipo -->
-                <img src="" alt="">
-                <link rel="stylesheet" href="">
-                <p></p>
-            </div>
-            <div class="membros-card">
-                <!-- nao sei como vai ser a estrutura, so um protoipo -->
-                <img src="" alt="">
-                <link rel="stylesheet" href="">
-                <p></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Rodapé - Layout a definir-->
+    <!-- Rodapé -->
     <footer>
-        &COPY;
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum autem, quo quia eveniet accusantium vitae a
-            mollitia beatae praesentium maiores quidem eius, officia ipsam assumenda quas tempore fugiat, dicta velit?
-        </p>
+        <div class="footer-conteudo">
+            <div class="footer-coluna footer-sobre">
+                <h3 class="footer-logo">DITADURA MILITAR NO BRASIL</h3>
+                <p>Mini documentário interativo sobre a opressão cultural durante o regime militar brasileiro
+                    (1964–1985), produzido como projeto de conclusão do curso de Desenvolvedor Front-End do Senac.</p>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#contexto">Contexto</a></li>
+                    <li><a href="#documentario">Documentário</a></li>
+                    <li><a href="#cantores">Cantores</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Sobre o projeto</h4>
+                <ul>
+                    <li>Curso: Desenvolvedor Front-End</li>
+                    <li>Instituição: Senac</li>
+                    <li>Ano: 2026</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-baixo">
+            <p>&copy; 2026 Ditadura Militar no Brasil — Projeto acadêmico sem fins lucrativos.</p>
+        </div>
     </footer>
+
     <script src="JS/script.js"></script>
 </body>
 

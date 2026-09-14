@@ -1,16 +1,65 @@
+/* ==========================================================================
+   STYLE.CSS — Reset, variáveis globais, fontes e regras base do site
+   ========================================================================== */
+
 @font-face {
     font-family: 'Zuume'; /*Nome que precisa colocar para chamar ela*/
     src: url(../Fonts/FontsFree-Net-zuumerough-bold-2.ttf);
 }
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* Nome para linkar: 'Montserrat', sans-serif;*/
 
-*{
+/* Montserrat = texto padrão | Cormorant Garamond = apoio serifado
+   Special Elite = fonte "datilografada", usada nas legendas para reforçar
+   a estética de dossiê/relatório de época pedida no mockup do PDF */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap');
+
+:root {
+    /* Paleta baseada no mockup em PDF */
+    --cor-preto: #0d0d0d;
+    --cor-branco: #f5f2ea;      /* branco levemente amarelado, tipo papel/dossiê */
+    --cor-cinza-claro: #d9d6cd;
+    --cor-cinza-medio: #999691; /* fundo da seção Documentário no PDF */
+    --cor-cinza-escuro: #4d4a45;
+    --cor-vermelho: #b3181c;    /* destaque tipo "FATO" / "RESUMO" no PDF */
+
+    --fonte-titulo: 'Zuume', sans-serif;
+    --fonte-texto: 'Montserrat', sans-serif;
+    --fonte-datilografada: 'Special Elite', monospace;
+
+    --altura-header: 64px; /* header agora mais fino */
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif; /* Fonte padrao do site, a vontade para modificar*/
 }
-html
-{
+
+html {
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor-branco);
+    color: var(--cor-preto);
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Classe utilitária livre para destacar palavras dentro de qualquer texto,
+   igual às palavras "FATO" e "RESUMO" em vermelho no mockup do PDF.
+   Basta envolver a palavra em <span class="destaque">FATO</span> no HTML. */
+.destaque {
+    color: var(--cor-vermelho);
+    font-weight: 700;
+}
+
+/* Todas as seções (menos o hero, que já ocupa 100vh) recebem um respiro
+   no topo para não ficarem escondidas atrás do header fixo */
+section:not(.hero) {
+    padding-top: var(--altura-header);
 }
