@@ -1,7 +1,4 @@
-/* ==========================================================================
-   CANTORES.CSS — Grade de cartões estilo "cartaz de procurado"
-   ========================================================================== */
-
+/* CSS da secao cantores */
 .cantores {
     background-color: var(--cor-preto);
     padding: 80px 40px 100px;
@@ -20,7 +17,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 

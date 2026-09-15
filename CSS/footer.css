@@ -1,6 +1,4 @@
-/* ==========================================================================
-   FOOTER.CSS — Rodapé completo (colunas + navegação + créditos)
-   ========================================================================== */
+
 
 footer {
     background-color: var(--cor-preto);
@@ -13,13 +11,13 @@ footer {
     flex-wrap: wrap;
     gap: 40px;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 60px 40px 40px;
 }
 
 .footer-coluna {
-    flex: 1 1 220px;
+    flex: 1 1 250px;
 }
 
 .footer-sobre {
@@ -81,6 +79,7 @@ footer {
     font-size: 12px;
     color: var(--cor-cinza-claro);
 }
+
 
 @media (max-width: 640px) {
     .footer-conteudo {

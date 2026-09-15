@@ -1,16 +1,10 @@
-/* ==========================================================================
-   CONTEXTO.CSS — Seção estilo "página de jornal": manchete, linha fina,
-   3 colunas separadas por regra vertical, capitular na primeira letra e
-   legendas de foto em itálico, como um jornal impresso de verdade
-   ========================================================================== */
-
+/* CSS da secao contexto */
 .contexto {
     background-color: var(--cor-branco);
     padding: 70px 60px 110px;
     border-top: 4px double var(--cor-preto);
 }
 
-/* Cabeçalho / manchete da reportagem */
 .contexto-cabecalho {
     max-width: 900px;
     margin: 0 auto 50px;
@@ -47,7 +41,7 @@
     margin: 0 auto;
 }
 
-/* Colunas de jornal */
+
 .contexto-colunas {
     display: flex;
     align-items: flex-start;
@@ -67,7 +61,6 @@
     padding: 0 30px;
 }
 
-/* Regra vertical entre colunas, igual às divisórias de um jornal impresso */
 .caixa-contexto-centro {
     border-left: 1px solid var(--cor-preto);
     border-right: 1px solid var(--cor-preto);
@@ -108,8 +101,6 @@
     hyphens: auto;
 }
 
-/* Capitular na primeira letra do primeiro parágrafo de cada coluna,
-   clássico recurso tipográfico de jornal */
 .letra-capitular {
     float: left;
     font-family: var(--fonte-titulo);
@@ -119,7 +110,7 @@
     color: var(--cor-vermelho);
 }
 
-/* ---------- Responsivo ---------- */
+
 @media (max-width: 900px) {
     .contexto {
         padding: 50px 20px 80px;

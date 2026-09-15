@@ -1,10 +1,4 @@
-/* ==========================================================================
-   NAV.CSS — Header fixo (fino) e Hero
-   ========================================================================== */
 
-/* CSS da Nav — corrigido: agora com top/left/z-index explícitos, então o
-   header sempre fica por cima de qualquer imagem/seção, mesmo as que usam
-   filter/transform (que criam suas próprias camadas de empilhamento) */
 header {
     background-color: rgba(13, 13, 13, 0.92);
     backdrop-filter: blur(4px);
@@ -38,7 +32,7 @@ header a:hover {
     border-bottom-color: var(--cor-vermelho);
 }
 
-/* CSS do banner principal (imagem de fundo e o h1) */
+
 .hero {
     height: 100vh;
     background: url(../imagens/Hero/BannerDocumentario.png);
@@ -65,7 +59,7 @@ header a:hover {
     text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* ---------- Responsivo ---------- */
+
 @media (max-width: 768px) {
     header {
         gap: 18px;
