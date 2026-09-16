@@ -59,6 +59,7 @@
     gap: 22px;
     flex: 1 1 0;
     padding: 0 30px;
+    overflow: hidden;
 }
 
 .caixa-contexto-centro {
@@ -75,11 +76,12 @@
     height: 240px;
     object-fit: cover;
     filter: grayscale(100%) contrast(1.05);
-    transition: filter 0.3s ease;
+    transition: transform 0.4s ease;
+    
 }
 
 .contexto img:hover {
-    filter: grayscale(0%) contrast(1.05);
+    transform: scale(1.08);
 }
 
 .contexto figcaption {

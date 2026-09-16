@@ -20,3 +20,4 @@ function textAnimacao() {
 }
 }
 document.addEventListener("DOMContentLoaded", textAnimacao);
+
