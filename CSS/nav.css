@@ -1,4 +1,4 @@
-
+/* CSS da navbar */
 header {
     background-color: rgba(13, 13, 13, 0.92);
     backdrop-filter: blur(4px);
@@ -43,10 +43,11 @@ header a:hover {
     background-size: cover;
     width: 100%;
     padding: 0 80px;
+    background-attachment: fixed;
 }
 
 .hero-title {
-    max-width: 900px;
+    max-width: 600px;
     width: 100%;
 }
 
